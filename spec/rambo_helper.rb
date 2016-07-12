@@ -6,7 +6,7 @@ module ApiHelper
   include Rack::Test::Methods
 
   def app
-    PersonalCalculator.new
+    PersonalCalculator
   end
 end
 
