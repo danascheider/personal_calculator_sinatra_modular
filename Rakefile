@@ -1,5 +1,5 @@
 unless ENV["RACK_ENV"] == "production"
-  require "rambo_ruby"
+  require "rambo"
   require "rspec/core/rake_task"
 
   Rambo::Rake::Task.new
