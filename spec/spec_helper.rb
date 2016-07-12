@@ -1,4 +1,5 @@
 require_relative "../personal_calculator"
+require_relative "../lib/age_calculator"
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
