@@ -6,7 +6,8 @@ module ApiHelper
   include Rack::Test::Methods
 
   def app
-    PersonalCalculator
+    require "active_support/core_ext/class/subclasses"
+    Sinatra::Base.descendants.find {|klass| klass != Sinatra::Application } || Sinatra::Application
   end
 end
 
